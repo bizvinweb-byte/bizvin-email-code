@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - /bin/export DEPLOYPATH=/home/bjrqrmko/public_html
-    - /bin/cp -R frontend/dist/. $DEPLOYPATH
+    - echo "Deploying files"
+    - mkdir -p /home/bjrqrmko/public_html
+    - cp -R frontend/dist/. /home/bjrqrmko/public_html
