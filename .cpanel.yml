@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - echo "Deploying files"
-    - mkdir -p /home/bjrqrmko/public_html
-    - cp -R frontend/dist/. /home/bjrqrmko/public_html
+    - echo "Deploy started"
+    - /bin/mkdir -p /home/bjrqrmko/public_html
+    - /bin/cp -R frontend/dist/. /home/bjrqrmko/public_html
