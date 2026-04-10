@@ -2,7 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/bjrqrmko/public_html/
-    - /bin/cp -R frontend/dist/* $DEPLOYPATH
-
-    - export BACKENDPATH=/home/bjrqrmko/backend/
-    - /bin/cp -R backend/* $BACKENDPATH
+    - /bin/cp -R frontend/dist/. $DEPLOYPATH
